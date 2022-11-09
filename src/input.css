@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+nav ul li a {
+  @apply text-white duration-100 hover:underline lg:text-lg desktop:text-xl;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply -rotate-[40deg];
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply w-[35px] rotate-[40deg];
+}
+
+nav.slide {
+  @apply visible opacity-100 backdrop-blur-sm;
+}
+
+header.scrolled {
+  @apply mt-[20px] w-[90%] rounded-t-2xl bg-brown;
+}
+
+navbar.scrolled {
+  @apply laptop:pl-32;
+}
+
+@layer base {
+  .momenta-shadow {
+    box-shadow: 4px 4px 0 #D69443;
+  }
+
+  .momenta-shadow-md {
+    box-shadow: 5px 5px 0 #D69443;
+  }
+
+  .momenta-shadow-lg {
+    box-shadow: 8px 8px 0 #D69443;
+  }
+
+  .yt-shadow {
+    box-shadow: 0 8px 0 #D69443;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-brown rounded-lg hover:bg-brown/90 shadow-md active:translate-y-[3px] active:shadow-none active:bg-brown/50 duration-100;
+  }
+}

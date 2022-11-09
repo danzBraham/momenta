@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momenta</title>
+  <link rel="stylesheet" href="./CSS/output.css">
+  <script src="https://kit.fontawesome.com/f3bdef35b2.js" crossorigin="anonymous"></script>
+  <script src="./JS/script.js" defer></script>
+</head>
+
+<body class="font-poppins bg-darkBrown text-white">
+  <header
+    class="w-full m-auto fixed left-0 right-0 z-50 px-5 py-4 tablet:px-12 tablet:py-6 laptop:px-16 flex justify-between items-center duration-300">
+    <h1 class="text-xl lg:text-2xl laptop:text-3xl font-bold text-white">MOMENTA</h1>
+    <nav
+      class="bg-brown/95 invisible opacity-0 p-5 tablet:px-12 m-auto w-full laptop:w-fit absolute left-0 top-14 right-0 tablet:top-20 rounded-b-2xl duration-300 laptop:static laptop:visible laptop:opacity-100 laptop:bg-transparent laptop:p-0 laptop:-mr-[1px]">
+      <ul class="flex flex-col gap-4 laptop:flex-grow laptop:flex-row laptop:gap-10">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#harga">Harga</a></li>
+        <li><a href="#ulasan">Ulasan</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle relative items-center h-[30px] w-[30px] laptop:hidden">
+      <button id="hamburger" class="absolute flex flex-col items-end gap-2">
+        <span class="bg-white h-[3px] w-[35px] block transition ease-in-out duration-300 origin-top-right"></span>
+        <span class="bg-white h-[3px] w-[35px] block transition ease-in-out duration-300"></span>
+        <span class="bg-white h-[3px] w-[35px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home"
+    class="w-full m-auto pt-[120px] px-10 flex flex-col justify-evenly items-center gap-8 laptop:flex-row laptop:gap-10">
+    <img src="./src/img/hero-momenta.png" alt="Momenta Logo"
+      class="w-[200px] md:w-[225px] tablet:w-[250px] laptop:w-[300px]">
+    <div class="flex flex-col justify-center items-center gap-2 lg:gap-3 tablet:gap-4">
+      <div class="flex flex-col gap-0">
+        <h3 class="text-center text-xl md:text-2xl lg:text-3xl tablet:text-4xl laptop:text-5xl font-bold text-conBrown">
+          Abadikan Momen Anda</h3>
+        <h3 class="text-center text-xl md:text-2xl lg:text-3xl tablet:text-4xl laptop:text-5xl">dengan Jasa Kami</h3>
+      </div>
+      <a href="#tentang" class="text-center m-auto block text-sm md:text-base lg:text-lg"><button class="btn">Tentang
+          Kami</button></a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="tentang"
+    class="grid grid-rows-2 gap-4 tablet:grid-cols-2 tablet:grid-rows-none mt-16 pt-24 laptop:pt-32 px-6 tablet:px-10 laptop:px-28 tablet:gap-10 laptop:gap-20 items-start tablet:items-center justify-items-center">
+    <div>
+      <h2 class="text-2xl ld:text-3xl laptop:text-4xl font-bold mb-1 tablet:mb-2">MOMENTA</h2>
+      <p class="laptop:text-xl">Momenta adalah sebuah usaha jasa profesi di bidang videography yang bisa mengerjakan
+        berbagai macam jenis video shooting seperti membuat video cinematic, video kenang-kenangan, dan lain-lain untuk
+        berbagai macam acara contohnya acara pernikahan, acara kelulusan, iklan komersil dan lain sebagainya.</p>
+    </div>
+    <img src="./src/img/editor.png" alt="Editor"
+      class="momenta-shadow lg:momenta-shadow-md tablet:momenta-shadow-lg tablet:w-[300px] laptop:w-[400px] row-start-1 tablet:col-start-2">
+  </section>
+
+  <section id="produk" class="grid grid-cols-1 gap-10 mt-16 pt-32 px-6 tablet:px-10 laptop:px-28">
+    <h2 class="text-3xl font-bold laptop:text-4xl text-center">Produk</h2>
+    <div class="grid grid-cols-1 gap-8 items-center tablet:grid-cols-2 justify-evenly">
+      <iframe src="https://www.youtube.com/embed/KjePbhd7nto" title="YouTube video player" frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        class="w-full aspect-video bg-brown yt-shadow rounded-lg"></iframe>
+      <iframe src="https://www.youtube.com/embed/mDOnfF2mIYY" title="YouTube video player" frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        class="w-full aspect-video bg-brown yt-shadow rounded-lg"></iframe>
+    </div>
+  </section>
+
+  <!-- Harga -->
+  <section id="harga" class="grid grid-cols-1 gap-10 mt-16 pt-32 px-6 laptop:px-14">
+    <h2 class="text-3xl font-bold laptop:text-4xl text-center">Harga</h2>
+    <div class="harga grid grid-cols-1 gap-4 tablet:grid-cols-2 tablet:gap-8 laptop:grid-cols-4 laptop:gap-10">
+      <div class="flex flex-col gap-4 p-6 bg-conBrown rounded-lg justify-between">
+        <h2 class="text-xl text-darkBrown font-medium">Paket Memories</h2>
+        <p class="text-darkBrown">Pembuatan Video Kenang-Kenangan</p>
+        <div class="harga flex items-end">
+          <p class="text-darkBrown font-semibold text-xl">500K</p>
+        </div>
+        <span class="h-[2px] bg-slate-900 w-full"></span>
+        <div class="text flex flex-col gap-4">
+          <p class="text-darkBrown text-lg">Apa yang di dapatkan?</p>
+          <p class="text-darkBrown text-lg"><i class="fa-regular fa-square-check text-green-900"></i> Video kenangan</p>
+          <p class="text-darkBrown text-lg"><i class="fa-regular fa-square-check text-green-900"></i> 2 kali Revisi</p>
+        </div>
+        <a class="bg-brown hover:bg-brown/90 py-2 px-4 text-center laptop:duration-100 hover:bg-main/60 rounded-sm text-lg text-darkBrown justify-self-end"
+          href="https://wa.me/6281382391394?text=Halo%20Min%2C%20Saya%20ingin%20Memesan%20Paket%20Memories" target="_blank">Pesan
+          Sekarang</a>
+      </div>
+
+      <div class="flex flex-col gap-4 p-6 bg-conBrown rounded-lg justify-between">
+        <h2 class="text-xl text-darkBrown font-medium">Paket Cinematic</h2>
+        <p class="text-darkBrown">Pembuatan Video Cinematic</p>
+        <div class="harga flex items-end">
+          <p class="text-darkBrown font-semibold text-xl">1000K</p>
+        </div>
+        <span class="h-[2px] bg-slate-900 w-full"></span>
+        <div class="text flex flex-col gap-4">
+          <p class="text-darkBrown text-lg">Apa yang di dapatkan?</p>
+          <p class="text-darkBrown text-lg"><i class="fa-regular fa-square-check text-green-900"></i> Video cinematic
+          </p>
+          <p class="text-darkBrown text-lg"><i class="fa-regular fa-square-check text-green-900"></i> 2 kali Revisi</p>
+        </div>
+        <a class="bg-brown hover:bg-brown/90 py-2 px-4 text-center laptop:duration-100 hover:bg-main/60 rounded-sm text-lg text-darkBrown"
+          href="https://wa.me/6281382391394?text=Halo%20Min%2C%20Saya%20ingin%20Memesan%20Paket%20Cinematography" target="_blank">Pesan
+          Sekarang</a>
+      </div>
+
+      <div class="flex flex-col gap-4 p-6 bg-conBrown rounded-lg justify-between">
+        <h2 class="text-xl text-darkBrown font-medium">Paket Marriage</h2>
+        <p class="text-darkBrown">Pembuatan Video Pernikahan</p>
+        <div class="harga flex items-end">
+          <p class="text-darkBrown font-semibold text-xl">2000K</p>
+        </div>
+        <span class="h-[2px] bg-slate-900 w-full"></span>
+        <div class="text flex flex-col gap-4">
+          <p class="text-darkBrown text-lg">Apa yang di dapatkan?</p>
+          <p class="text-darkBrown text-lg"><i class="fa-regular fa-square-check text-green-900"></i> Video pernikahan
+          </p>
+          <p class="text-darkBrown text-lg"><i class="fa-regular fa-square-check text-green-900"></i> 2 kali Revisi</p>
+        </div>
+        <a class="bg-brown hover:bg-brown/90 py-2 px-4 text-center laptop:duration-100 hover:bg-main/60 rounded-sm text-lg text-darkBrown justify-self-end"
+          href="https://wa.me/6281382391394?text=Halo%20Min%2C%20Saya%20ingin%20Memesan%20Paket%20Marriage%20" target="_blank">Pesan
+          Sekarang</a>
+      </div>
+
+      <div class="flex flex-col gap-4 p-6 bg-conBrown rounded-lg justify-between">
+        <h2 class="text-xl text-darkBrown font-medium">Paket Iklan</h2>
+        <p class="text-darkBrown">Pembuatan Video Iklan Komersil</p>
+        <div class="harga flex items-end">
+          <p class="text-darkBrown font-semibold text-xl">3000K</p>
+        </div>
+        <span class="h-[2px] bg-slate-900 w-full"></span>
+        <div class="text flex flex-col gap-4">
+          <p class="text-darkBrown text-lg">Apa yang di dapatkan?</p>
+          <p class="text-darkBrown text-lg"><i class="fa-regular fa-square-check text-green-900"></i> Video iklan
+            komersil</p>
+          <p class="text-darkBrown text-lg"><i class="fa-regular fa-square-check text-green-900"></i> 2 kali Revisi</p>
+        </div>
+        <a class="bg-brown hover:bg-brown/90 py-2 px-4 text-center laptop:duration-100 hover:bg-main/60 rounded-sm text-lg text-darkBrown justify-self-end"
+          href="https://wa.me/6281382391394?text=Halo%20Min%2C%20Saya%20ingin%20Memesan%20Paket%20Iklan" target="_blank">Pesan
+          Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ulasan -->
+  <section id="ulasan" class="grid grid-cols-1 laptop:gap-4 pt-44 laptop:px-8">
+    <h2 class="text-3xl font-bold laptop:text-4xl text-center">Ulasan</h2>
+    <div class="grid grid-cols-1 gap-6 p-6 items-start justify-items-center tablet:grid-cols-2 laptop:grid-cols-3">
+      <div class="w-full p-4 flex flex-col gap-2 items-center bg-choco rounded-lg">
+        <div class="flex gap-4 items-center self-start">
+          <img src="./src/img/avatar-1.png" alt="reviewer" class="rounded-full border-2 border-darkBrown">
+          <p>Jason Kimmich</p>
+        </div>
+        <span class="w-full h-[2px] bg-black"></span>
+        <p class="font-light">Pengambilan gambar dan videonya presisi, serta editan video yang sesuai membuat video
+          promosi saya menjadi sangat bagus</p>
+      </div>
+      <div class="w-full p-4 flex flex-col gap-2 items-center bg-choco rounded-lg">
+        <div class="flex gap-4 items-center self-start">
+          <img src="./src/img/avatar-2.png" alt="reviewer" class="rounded-full border-2 border-darkBrown">
+          <p>Fabri Goza</p>
+        </div>
+        <span class="w-full h-[2px] bg-black"></span>
+        <p class="font-light">Kualitas kameranya proper dan skill editing yang sangat menarik</p>
+      </div>
+      <div class="w-full p-4 flex flex-col gap-2 items-center bg-choco rounded-lg">
+        <div class="flex gap-4 items-center self-start">
+          <img src="./src/img/avatar-3.png" alt="reviewer" class="rounded-full border-2 border-darkBrown">
+          <p>Uzu Koke</p>
+        </div>
+        <span class="w-full h-[2px] bg-black"></span>
+        <p class="font-light">Banyak pelajaran yang kita pelajari saat menonton film ini</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section
+    class="footer grid grid-cols-1 gap-6 mt-10 px-6 py-12 border-y-[1px] border-white w-[90%] m-auto laptop:grid-cols-2">
+    <div class="desc flex flex-col gap-6">
+      <h2 class="fonts-bold text-brown text-2xl">Momenta</h2>
+      <p class="text-paragraf">Tempat menyediakan jasa videography cinematic, memories, marriage, & iklan komersil
+      </p>
+      <div class="link flex items-center gap-2">
+        <a class="py-1 px-2 bg-brown rounded-sm text-white duration-100 hover:bg-brown/60" href="https://www.instagram.com/momenta234/" target="_blank"><i
+            class="fa-brands fa-instagram fa-2x"></i></a>
+        <a class="py-1 px-2 bg-brown rounded-sm text-white duration-100 hover:bg-brown/60" href="https://wa.me/6281382391394?text=Halo%20Min%2C%20Saya%20butuh%20jasa%20untuk%20membuat%20video" target="_blank"><i
+            class="fa-brands fa-whatsapp fa-2x"></i></a>
+      </div>
+    </div>
+
+    <div class="info flex flex-col gap-6">
+      <div class="nav">
+        <h2 class="text-white font-medium text-xl mb-2"><i class="fa-solid fa-location-arrow"></i> Navigasi</h2>
+        <ul class="flex flex-col gap-2 tablet:flex-row">
+          <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#home">Beranda</a></li>
+          <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#tentang">Tentang</a></li>
+          <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#produk">Produk</a></li>
+          <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#harga">Harga</a></li>
+          <li><a class="text-sm text-paragraf duration-100 hover:underline" href="#ulasan">Ulasan</a></li>
+        </ul>
+      </div>
+      <div class="location">
+        <h2 class="text-white font-medium text-xl mb-2"><i class="fa-solid fa-location-dot"></i> Alamat</h2>
+        <p class="text-paragraf">Jl. Pajajaran No.234-A ec. Bogor Utara, Kota Bogor</p>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center text-sm p-6 text-paragraf">©Copyright 2022 - Momenta</footer>
+</body>
+
+</html>
