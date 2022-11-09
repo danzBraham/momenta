@@ -876,12 +876,12 @@ video {
   padding-top: 6rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
+.pt-20 {
+  padding-top: 5rem;
 }
 
-.pt-44 {
-  padding-top: 11rem;
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -1061,6 +1061,10 @@ header.scrolled {
 @media (min-width: 375px) {
   .md\:w-\[225px\] {
     width: 225px;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 
   .md\:text-2xl {
